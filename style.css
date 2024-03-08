@@ -1,0 +1,16 @@
+/*
+Theme Name: motaphoto
+Theme URI: URL du site Web du thème
+Description: Thème personnalisé pour Mota Photo
+Author: Céhel
+Author URI: URL de l'auteur
+Version: 1.0
+License: Licence du thème
+License URI: URL de la licence
+Tags: Photo
+*/
+
+@import 'assets/css/style.css';
+@import 'assets/css/modal_contact.css';
+@import 'assets/css/fonts.css';
+@import 'assets/css/media-queries.css';

@@ -1,0 +1,133 @@
+/* roots */
+:root {
+    --red: #E00001;
+    --red-light: #F65859;
+    --red-powder: #FCD6D6;
+    --gray-dark: #313144;
+    --gray: #C4C4C4;
+    --gray-light: #D8D8D8;
+    --gray-powder: #E5E5E5;
+}
+
+h1 {
+    font-family: 'Space Mono';
+    font-size: 94px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Space Mono';
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Space Mono';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.description {
+    font-family: 'Space Mono';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+/*  */
+
+/* header  */
+body {
+    margin: auto;
+}
+header {
+    height: auto;
+}
+
+#btn {
+    display: none;
+}
+
+#menu-menu-principal-1 {
+    display: none;
+}
+#menu-burger {
+    z-index: 0;
+}
+
+#primary-navigation {
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 10px 150px;
+    margin: auto;
+    box-shadow: 0px 4px 14px 10px rgba(0, 0, 0, 0.03);
+}
+#menu-menu-principal {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+#menu-menu-principal a {
+    font-family: 'Space Mono';
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 50px;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+#menu-menu-principal a:hover {
+    font-weight: 700;
+}
+
+.logo {
+    width: 210px;
+    height: 15px;
+}
+
+/* footer */
+#footer-navigation {
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-footer {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding: 0;
+    margin: 15px 0;
+}
+
+#menu-footer a {
+    font-family: 'Space Mono';
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 40px;
+    transition: 0.3s ease-in-out;
+}
+
+#menu-footer a:hover {
+    font-weight: 700;
+}

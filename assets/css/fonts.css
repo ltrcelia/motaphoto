@@ -1,0 +1,51 @@
+/* poppins */
+@font-face {
+    font-family: 'Poppins'; /* Nom de la police */
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype'); /* Ajoutez le chemin vers le fichier TTF */
+    font-weight: 300; /* Poids de la police */
+    font-style: normal; /* Style de la police (normal, italic, etc.) */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins'; /* Nom de la police */
+    src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype'); /* Ajoutez le chemin vers le fichier TTF */
+    font-weight: 500; /* Poids de la police */
+    font-style: normal; /* Style de la police (normal, italic, etc.) */
+    font-display: swap;
+}
+/*  */
+
+/* space mono */
+@font-face {
+    font-family: 'Space Mono'; /* Nom de la police */
+    src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype'); /* Ajoutez le chemin vers le fichier TTF */
+    font-weight: 400; /* Poids de la police */
+    font-style: normal; /* Style de la police (normal, italic, etc.) */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono'; /* Nom de la police */
+    src: url('../fonts/Space_Mono/SpaceMono-Bold.ttf') format('truetype'); /* Ajoutez le chemin vers le fichier TTF */
+    font-weight: 700; /* Poids de la police */
+    font-style: normal; /* Style de la police (normal, italic, etc.) */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono'; /* Nom de la police */
+    src: url('../fonts/Space_Mono/SpaceMono-Italic.ttf') format('truetype'); /* Ajoutez le chemin vers le fichier TTF */
+    font-weight: 400; /* Poids de la police */
+    font-style: italic; /* Style de la police (normal, italic, etc.) */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono'; /* Nom de la police */
+    src: url('../fonts/Space_Mono/SpaceMono-BoldItalic.ttf') format('truetype'); /* Ajoutez le chemin vers le fichier TTF */
+    font-weight: 700; /* Poids de la police */
+    font-style: italic; /* Style de la police (normal, italic, etc.) */
+    font-display: swap;
+}
+/*  */
