@@ -1,5 +1,7 @@
 @media screen and (max-width: 1024px) {
-    
+    .hero-header h1 {
+        font-size: 80px;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -7,6 +9,10 @@
         padding: 10px 70px;
         justify-content: space-between;
         align-items: baseline;
+    }
+    .hero-header h1 {
+        font-size: 60px;
+        -webkit-text-stroke: 2px white;
     }
 }
 
@@ -24,9 +30,19 @@
     #menu-footer a {
         padding: 10px 30px;
     }
+
+    .hero-header h1 {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 610px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 46px;
+    }
     .logo {
         width: 140px;
         height: 10px;
@@ -80,11 +96,9 @@
         justify-content: space-between;
         align-items: center;
     }
-
     #menu-menu-principal {
         display: none;
     }
-
     #menu-menu-principal-1 {
         list-style-type: none;
         display: flex;
@@ -93,11 +107,9 @@
         padding: 0;
         margin: 0;
     }
-
     #menu-menu-principal-1 li {
     margin-bottom: 20px;
     }
-
     #menu-menu-principal-1 a {
         font-family: 'Space Mono';
         font-size: 44px;
@@ -107,23 +119,34 @@
         color: white;
         transition: 0.2s ease-in-out;
     }
-
     #menu-menu-principal-1 a:hover {
         font-weight: 700;
     }
 
     #menu-footer {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 0 !important;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 0 !important;
+    }
+    #menu-footer li{
+        padding-bottom: 15px;
     }
 
-    #menu-footer li{
-    padding-bottom: 15px;
+    .hero-header h1 {
+        font-size: 40px;
+        -webkit-text-stroke: 1px white;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .hero-header h1 {
+        font-size: 28px;
+        -webkit-text-stroke: 1px white;
+    }
+}
+
+/* animations */
 @keyframes fade-out {
     0% {
       transform: translateY(-70px);

@@ -8,7 +8,6 @@
     --gray-light: #D8D8D8;
     --gray-powder: #E5E5E5;
 }
-
 h1 {
     font-family: 'Space Mono';
     font-size: 94px;
@@ -16,7 +15,6 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
 }
-
 h2 {
     font-family: 'Space Mono';
     font-size: 64px;
@@ -24,7 +22,6 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
 }
-
 h3 {
     font-family: 'Space Mono';
     font-size: 18px;
@@ -32,7 +29,6 @@ h3 {
     font-weight: 400;
     text-transform: uppercase;
 }
-
 .description {
     font-family: 'Space Mono';
     font-size: 14px;
@@ -40,7 +36,6 @@ h3 {
     font-weight: 400;
     text-transform: uppercase;
 }
-
 p {
     font-family: 'Poppins';
     font-size: 14px;
@@ -49,6 +44,7 @@ p {
 }
 /*  */
 
+
 /* header  */
 body {
     margin: auto;
@@ -56,18 +52,15 @@ body {
 header {
     height: auto;
 }
-
 #btn {
     display: none;
 }
-
 #menu-menu-principal-1 {
     display: none;
 }
 #menu-burger {
     z-index: 0;
 }
-
 #primary-navigation {
     background-color: white;
     z-index: 100;
@@ -83,7 +76,6 @@ header {
     list-style-type: none;
     flex-direction: row;
 }
-
 #menu-menu-principal a {
     font-family: 'Space Mono';
     font-size: 14px;
@@ -93,15 +85,15 @@ header {
     color: black;
     transition: 0.3s ease-in-out;
 }
-
 #menu-menu-principal a:hover {
     font-weight: 700;
 }
-
 .logo {
     width: 210px;
     height: 15px;
 }
+/* */ 
+
 
 /* footer */
 #footer-navigation {
@@ -109,7 +101,6 @@ header {
     display: flex;
     justify-content: center;
 }
-
 #menu-footer {
     display: flex;
     list-style-type: none;
@@ -117,7 +108,6 @@ header {
     padding: 0;
     margin: 15px 0;
 }
-
 #menu-footer a {
     font-family: 'Space Mono';
     font-size: 14px;
@@ -127,7 +117,24 @@ header {
     padding: 10px 40px;
     transition: 0.3s ease-in-out;
 }
-
 #menu-footer a:hover {
     font-weight: 700;
+}
+/* */ 
+
+
+/* hero header */
+.hero-header {
+    display: flex;
+    justify-content: center;
+}
+#hero {
+    max-width: 100%;
+    max-height: 950px;
+}
+.hero-header h1 {
+    position: absolute;
+    margin-top: 30%;
+    -webkit-text-stroke: 3px white;
+    color: transparent;
 }
