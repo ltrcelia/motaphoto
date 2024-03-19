@@ -8,8 +8,6 @@
         <h1>photographe event</h1>
     </section>
 
-    <?php get_template_part('templates_part/photo_block'); ?>
-
 </main>
 
 

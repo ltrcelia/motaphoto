@@ -7,6 +7,7 @@ function enqueue_theme_assets() {
 add_action('wp_enqueue_scripts', 'enqueue_theme_assets');
 
 
+
 function register_my_menus() {
     register_nav_menus(
         array(
@@ -16,5 +17,6 @@ function register_my_menus() {
     );
 }
 add_action( 'init', 'register_my_menus' );
+
 
 ?>

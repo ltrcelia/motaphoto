@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css"> -->
     <script defer src="<?php echo get_template_directory_uri() ?>/assets/js/script.js"></script>
     <?php wp_head(); ?>
 </head>

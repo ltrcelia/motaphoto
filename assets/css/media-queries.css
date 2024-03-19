@@ -14,6 +14,22 @@
         font-size: 60px;
         -webkit-text-stroke: 2px white;
     }
+
+    #container {
+        margin: 0 100px;
+    }
+    .container-photo {
+        margin: 0 100px;
+    }
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .contact p {
+        text-align:left;
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 730px) {
@@ -34,9 +50,51 @@
     .hero-header h1 {
         font-size: 50px;
     }
+
+    .container-infos {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .article-infos {
+        order: 2;
+        width: 100%;
+    }
+    #photo {
+        order: 1;
+        width: 100%;
+        object-fit: contain;
+    }
+    .infos {
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .container-photo h3 {
+        padding: 25px 0 25px 0;
+        text-align: center;
+    }
+    .container-photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 25px;
+    }
+    .related-photo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding-bottom: 25px;
+    }
+    .photo {
+        width: 450px;
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 610px) {
+    /* index.php */
     h1 {
         font-size: 28px;
     }
@@ -132,10 +190,27 @@
     #menu-footer li{
         padding-bottom: 15px;
     }
+    /* */
 
+
+    /* front-page.php */
     .hero-header h1 {
         font-size: 40px;
         -webkit-text-stroke: 1px white;
+    }
+    /* */
+
+
+    /* single-photo.php */
+    #container {
+        margin: 0 60px;
+    }
+    .container-photo .photo {
+        width: 320px;
+        height: 280px;
+    }
+    .infos h2 {
+        line-height: 104%;
     }
 }
 
@@ -145,6 +220,7 @@
         -webkit-text-stroke: 1px white;
     }
 }
+
 
 /* animations */
 @keyframes fade-out {
