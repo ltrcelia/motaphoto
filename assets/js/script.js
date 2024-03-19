@@ -3,7 +3,6 @@ const modal = document.getElementById('myModal');
 const contactLink = document.querySelector('nav a[href="#contact"]');
 const contactLinkBurger = document.querySelector('#menu-burger a[href="#contact"]');
 const menuLiens = document.querySelectorAll('a');
-
 document.addEventListener('DOMContentLoaded', function () {
 
     contactLink.addEventListener('click', function(event) {

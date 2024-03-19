@@ -1,4 +1,7 @@
 /* roots */
+html {
+    margin-top: 0 !important;
+}
 :root {
     --red: #E00001;
     --red-light: #F65859;
