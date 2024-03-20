@@ -49,6 +49,29 @@ p {
     font-style: normal;
     font-weight: 300;
 }
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--gray-light);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
+    text-decoration: none;
+    color: #000;
+    font-family: 'Space Mono';
+    font-size: 12px;
+    font-weight: 400;
+}
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+}
 /*  */
 
 
@@ -91,7 +114,6 @@ header {
     text-transform: uppercase;
     padding-left: 50px;
     color: black;
-    transition: 0.3s ease-in-out;
 }
 #menu-menu-principal a:hover {
     font-weight: 700;
@@ -123,7 +145,6 @@ header {
     text-transform: uppercase;
     color: black;
     padding: 10px 40px;
-    transition: 0.3s ease-in-out;
 }
 #menu-footer a:hover {
     font-weight: 700;
@@ -131,7 +152,7 @@ header {
 /* */ 
 
 
-/* hero header */
+/* front-page hero header */
 .hero-header {
     display: flex;
     justify-content: center;
@@ -146,15 +167,47 @@ header {
     -webkit-text-stroke: 3px white;
     color: transparent;
 }
+/* */
 
+
+/* front-page  grid*/
+.load-more {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.gallery {
+    margin: 30px 150px 0 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
+.left-categories {
+    display: flex;
+    gap: 30px;
+}
 .grid {
-    margin: 40px 150px;
     display: grid;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-.photo {
-    width: 565px;
-    height: 495px;
+select {
+    width: 260px;
+    height: 43px;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray);
+    padding: 10px;
+    margin: 50px 0;
+    cursor: pointer;
+}
+.selection {
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
 }

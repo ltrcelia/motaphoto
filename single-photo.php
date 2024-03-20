@@ -46,17 +46,35 @@
 
         </div>
 
+        <section class="contact-nav">
+            <div class="contact">
+                <p>Cette photo vous intéresse ?</p>
+                <button class="btn btn-contact">Contact</button>
+                <script>
+                    jQuery(".btn-contact").click(function () {
+                        let referenceValue = "<?php echo get_field('reference'); ?>";
+                        jQuery('[name="your-subject"]').val(referenceValue);
+                    });
+                </script>
+            </div>
 
-        <div class="contact">
-            <p>Cette photo vous intéresse ?</p>
-            <button class="btn-contact">Contact</button>
-            <script>
-                jQuery(".btn-contact").click(function () {
-                    let referenceValue = "<?php echo get_field('reference'); ?>";
-                    jQuery('[name="your-subject"]').val(referenceValue);
-                });
-            </script>
-        </div>
+            <div id="navigation"> 
+            <?php include('templates_part/photo_block.php'); ?>
+                <div id="arrows">
+                    <div href="" id="prev-arrow">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/small-prev-arrow.png" alt="Flèche vers la gauche" id="prev">
+                        <!-- <p>Précédente</p> -->
+                    </div>
+                    
+                    <div href="" id="next-arrow">
+                        <!-- <p>Suivante</p> -->
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/small-next-arrow.png" alt="Flèche vers la droite" id="next">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
 
     </section>
 
@@ -87,7 +105,6 @@
                     ),
                 ),
             );
-
             $related_photos_query = new WP_Query($args);
 
                 if ($related_photos_query->have_posts()) {

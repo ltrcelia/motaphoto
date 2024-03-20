@@ -38,28 +38,51 @@
     align-items: center;
     width: 49%;
 }
-.contact .btn-contact {
+.contact-nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-content: baseline;
+    justify-content: space-between;
+}
+#navigation,
+#prev-arrow,
+#next-arrow {
+    display: flex;
+}
+#prev,
+#next {
     cursor: pointer;
-    width: 250px;
-    height: 50px;
-    border-radius: 2px;
-    border: none;
-    background-color: var(--gray-light);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
-    text-decoration: none;
-    color: #000;
-    font-family: 'Space Mono';
-    font-size: 12px;
-    font-weight: 400;
+    width: 25px;
+    height: 11px;
+    transition: 0.2s ease-in-out;
 }
-.contact .btn-contact:hover {
-    background-color: #000;
-    color: #fff;
-    font-weight: 700;
+#navigation p {
+    margin: 0;
 }
+#navigation .photo {
+    width: 81px;
+    height: 71px;
+}
+#navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+#arrows {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#prev:hover,
+#next:hover {
+    transform: scale(1.2);
+}
+#prev:hover {
+    transform: translate(-5px) scale(1.1);
+}
+#next:hover {
+    transform: translate(5px) scale(1.1);
+}
+
 
 
 
@@ -88,26 +111,4 @@
 }
 .photo {
     position: relative;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Fond transparent par défaut */
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s;
-}
-
-.overlay i {
-    font-size: 24px; /* Ajustez la taille de l'icône selon vos besoins */
-    color: #fff; /* Couleur de l'icône */
-    margin: 0 10px; /* Espacement entre les icônes */
-}
-
-.photo:hover .overlay {
-    opacity: 0.8; /* Opacité au survol */
 }
