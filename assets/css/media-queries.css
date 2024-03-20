@@ -2,6 +2,9 @@
     .hero-header h1 {
         font-size: 80px;
     }
+    .infos {
+        width: 49%;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -19,16 +22,44 @@
         margin: 0 100px;
     }
     .container-photo {
-        margin: 0 100px;
+        margin: 0 50px;
+    }
+    .container-photo .photo {
+        height: 400px;
     }
     .contact {
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
+        align-items: flex-start;
         width: 100%;
     }
     .contact p {
         text-align:left;
         margin-top: 0;
+    }
+    .infos h2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .container-infos {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .article-infos {
+        order: 2;
+        width: 100%;
+    }
+    #photo {
+        order: 1;
+        width: 100%;
+        object-fit: contain;
+    }
+    .contact {
+        align-content: center;
     }
 }
 
@@ -51,45 +82,24 @@
         font-size: 50px;
     }
 
-    .container-infos {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .article-infos {
-        order: 2;
-        width: 100%;
-    }
-    #photo {
-        order: 1;
-        width: 100%;
-        object-fit: contain;
-    }
     .infos {
-        display: flex;
-        flex-direction: column;
         width: 260px;
         gap: 15px;
-        margin-bottom: 30px;
     }
     .container-photo h3 {
         padding: 25px 0 25px 0;
         text-align: center;
     }
-    .container-photo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 25px;
-    }
-    .related-photo {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        padding-bottom: 25px;
-    }
-    .photo {
+    .container-photo .photo {
         width: 450px;
         height: 400px;
+    }
+    .related-photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
     }
 }
 
@@ -211,6 +221,9 @@
     }
     .infos h2 {
         line-height: 104%;
+    }
+    .contact p {
+        text-align: left;
     }
 }
 
