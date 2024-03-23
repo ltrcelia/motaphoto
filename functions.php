@@ -2,6 +2,7 @@
 
 function enqueue_theme_assets() {
     wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('custom-script-lightbox', get_template_directory_uri() . '/assets/js/lightbox.js', array('jquery'), '1.0', true);
     wp_enqueue_style('custom-style', get_template_directory_uri() . '/style.css', array(), '1.0');
 }
 add_action('wp_enqueue_scripts', 'enqueue_theme_assets');

@@ -48,4 +48,50 @@ menuLiens.forEach(link => {
 // fin
 
 
+// lien navigation < >
+const arrowLeft = document.getElementById('prev-arrow');
+const arrowRight = document.getElementById('next-arrow');
+const containerPhoto = document.getElementById('container-photo');
+
+if (arrowLeft) {
+    arrowLeft.addEventListener('mouseover', () => {
+        containerPhoto.style.opacity = '1';
+    });
+};
+if (arrowLeft) {
+    arrowLeft.addEventListener('mouseout', () => {
+        containerPhoto.style.opacity = '0';
+    });
+};
+if (arrowRight) {
+    arrowRight.addEventListener('mouseover', () => {
+        containerPhoto.style.opacity = '1';
+    });
+};
+if (arrowRight) {
+    arrowRight.addEventListener('mouseout', () => {
+        containerPhoto.style.opacity = '0';
+    });
+};
+// fin 
+
+
 // Charger plus
+
+// fin 
+
+
+// lightbox
+const lightbox = document.getElementById('lightbox');
+const iconeFullscreen = document.getElementById('icone-fullscreen');
+const closeCross = document.querySelector('.close')
+
+document.addEventListener('DOMContentLoaded', function () {
+    iconeFullscreen.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        lightbox.style.display = 'block'; 
+    });
+    closeCross.addEventListener('click', function() {
+        lightbox.style.display = 'none'; 
+    });
+});
