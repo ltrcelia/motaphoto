@@ -52,6 +52,8 @@ menuLiens.forEach(link => {
 const arrowLeft = document.getElementById('prev-arrow');
 const arrowRight = document.getElementById('next-arrow');
 const containerPhoto = document.getElementById('container-photo');
+const prevPhoto = document.getElementById('prev-photo');
+const nextPhoto = document.getElementById('next-photo');
 
 if (arrowLeft) {
     arrowLeft.addEventListener('mouseover', () => {
@@ -75,7 +77,23 @@ if (arrowRight) {
 };
 // fin 
 
+jQuery(document).ready(function($) {
+    // Cache toutes les miniatures lors du chargement de la page
+    $('#prev-photo, #next-photo').hide();
 
+    // Gére l'affichage des miniatures au survol
+    $('#prev-arrow').hover(function() {
+        $('#prev-photo').show();
+    }, function() {
+        $('#prev-photo').hide();
+    });
+
+    $('#next-arrow').hover(function() {
+        $('#next-photo').show();
+    }, function() {
+        $('#next-photo').hide();
+    });
+});
 // Charger plus
 
 // fin 
@@ -95,3 +113,4 @@ document.addEventListener('DOMContentLoaded', function () {
         lightbox.style.display = 'none'; 
     });
 });
+// fin

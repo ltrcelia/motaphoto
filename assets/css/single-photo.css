@@ -43,7 +43,6 @@
     align-content: baseline;
     justify-content: space-between;
 }
-#navigation,
 #prev-arrow,
 #next-arrow {
     display: flex;
@@ -55,23 +54,6 @@
     height: 11px;
     transition: 0.2s ease-in-out;
 }
-#navigation p {
-    margin: 0;
-}
-#navigation .photo {
-    width: 81px;
-    height: 71px;
-}
-#navigation {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-}
-#arrows {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
 #prev:hover,
 #next:hover {
     transform: scale(1.2);
@@ -82,9 +64,37 @@
 #next:hover {
     transform: translate(5px) scale(1.1);
 }
+#navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+#navigation p {
+    margin: 0;
+}
+#container-photo img {
+    width: 81px;
+    height: 71px;
+}
+#arrows {
+    z-index: 100;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
 #container-photo {
-    opacity: 0;
     transition: 0.5s ease-in-out;
+    display: flex;
+    width: 80px;
+    height: 70px;
+}
+#container-photo .hover-photo {
+    width: 100%;
+}
+.hover-photo img {
+    width: 80px;
+    height: 70px;
+    object-fit: cover;
 }
 #overlay-image {
     background-color: black;
@@ -107,6 +117,7 @@
     position: relative;
 }
 .photo {
+    object-fit: contain;
     position: relative;
     width: 565px;
     height: 495px;
@@ -127,6 +138,7 @@
     left: 50%;
 }
 #icone-fullscreen {
+    z-index: 100;
     width: 34px;
     height: auto;
     top: 11px;

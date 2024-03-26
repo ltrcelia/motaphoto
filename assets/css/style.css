@@ -67,6 +67,7 @@ p {
     font-family: 'Space Mono';
     font-size: 12px;
     font-weight: 400;
+    transition: 0.3s ease-in-out;
 }
 .btn:hover {
     background-color: #000;
@@ -157,8 +158,9 @@ header {
 .hero-header {
     display: flex;
     justify-content: center;
-    width: auto;
+    width: 100%;
     height: 962px;
+    max-height: 100vh;
 }
 #hero {
     width: 100%;
@@ -188,11 +190,13 @@ header {
 }
 .categories {
     display: flex;
+    margin: 50px 0 40px 0;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.left-categories {
-    display: flex;
-    gap: 30px;
+#select-categories,
+#select-formats {
+    margin-right: 30px;
 }
 .grid {
     display: grid;
@@ -206,11 +210,11 @@ select {
     border-radius: 8px;
     border: 1.5px solid var(--gray);
     padding: 10px;
-    margin: 50px 0;
     cursor: pointer;
 }
 .selection {
     font-family: 'Poppins';
+    margin: 5px;
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;

@@ -1,12 +1,15 @@
 <?php 
 
-function enqueue_theme_assets() {
-    wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0', true);
-    wp_enqueue_script('custom-script-lightbox', get_template_directory_uri() . '/assets/js/lightbox.js', array('jquery'), '1.0', true);
-    wp_enqueue_style('custom-style', get_template_directory_uri() . '/style.css', array(), '1.0');
+function enqueue_custom_styles() {
+    wp_enqueue_style('custom-style', get_stylesheet_directory_uri() . '/style.css', array(), '1.0');
 }
-add_action('wp_enqueue_scripts', 'enqueue_theme_assets');
+add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
 
+function enqueue_custom_scripts() {
+    wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+    wp_enqueue_script('lightbox-scripts', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
 
 function register_my_menus() {

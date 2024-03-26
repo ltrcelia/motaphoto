@@ -59,19 +59,7 @@
             </div>
 
             <div id="navigation"> 
-                <div id="container-photo">
-                    <?php get_template_part('templates_part/photo_block'); ?>
-                </div>
-                
-                <div id="arrows">
-                    <div href="" id="prev-arrow">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/small-prev-arrow.png" alt="Flèche vers la gauche" id="prev">
-                    </div>
-                    
-                    <div href="" id="next-arrow">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/small-next-arrow.png" alt="Flèche vers la droite" id="next">
-                    </div>
-                </div>
+                <?php get_template_part( 'templates_part/navigation' ); ?>
             </div>
 
         </section>
