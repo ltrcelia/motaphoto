@@ -169,16 +169,17 @@
         position: fixed;
         width: 100%;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         opacity: 0;
         background: var(--red);
+        display: none;
     }
     #menu-burger.open {
         opacity: 1;
         animation: fade-out 0.7s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #btn {
@@ -259,11 +260,11 @@
         -webkit-text-stroke: 1px white;
     }
     .hero-header {
-        height: 30vh;
+        height: 40vh;
     }
     .photo {
         width: 320px;
-        height: 280px;
+        height: 280px !important;
     }
     /* */
     

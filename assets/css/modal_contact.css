@@ -69,7 +69,8 @@
     background: #D8D8D8;
 }
 
-@media screen and (max-width: 610px) {
+
+@media screen and (max-width: 730px) {
     .modal-content {
         width: 80%;
         height: 640px;

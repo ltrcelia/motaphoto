@@ -30,13 +30,12 @@
             ?>
         </div>
 
+        <div class="load-more">
+            <button id="load-more-btn" class="btn">Charger plus</button>
+        </div>
+
     </section>
 
-    <div class="load-more">
-        <button id="load-more-btn" class="btn">Charger plus</button>
-    </div>
-
 </main>
-
 
 <?php get_footer(); ?>

@@ -75,13 +75,11 @@ if (arrowRight) {
         containerPhoto.style.opacity = '0';
     });
 };
-// fin 
 
+// cacher une des deux photos
 jQuery(document).ready(function($) {
-    // Cache toutes les miniatures lors du chargement de la page
     $('#prev-photo, #next-photo').hide();
 
-    // Gére l'affichage des miniatures au survol
     $('#prev-arrow').hover(function() {
         $('#prev-photo').show();
     }, function() {
@@ -94,7 +92,60 @@ jQuery(document).ready(function($) {
         $('#next-photo').hide();
     });
 });
-// Charger plus
+// fin
 
+
+// Charger plus
+(function ($) {
+    $(document).ready(function () {
+
+        // Chargment des commentaires en Ajax
+        $('.js-load-comments').submit(function (e) {
+
+            // Empêcher l'envoi classique du formulaire
+            e.preventDefault();
+
+            // L'URL qui réceptionne les requêtes Ajax dans l'attribut "action" de <form>
+            const ajaxurl = $(this).attr('action');
+
+            // Les données de notre formulaire
+			// ⚠️ Ne changez pas le nom "action" !
+            const data = {
+                action: $(this).find('input[name=action]').val(), 
+                nonce:  $(this).find('input[name=nonce]').val(),
+                postid: $(this).find('input[name=postid]').val(),
+            }
+
+            // Pour vérifier qu'on a bien récupéré les données
+            console.log(ajaxurl);
+            console.log(data);
+
+            // Requête Ajax en JS natif via Fetch
+            fetch(ajaxurl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Cache-Control': 'no-cache',
+                },
+                body: new URLSearchParams(data),
+            })
+            .then(response => response.json())
+            .then(body => {
+                console.log(body);
+
+                // En cas d'erreur
+                if (!body.success) {
+                    alert(response.data);
+                    return;
+                }
+
+                // Et en cas de réussite
+                $(this).hide(); // Cacher le formulaire
+                $('.comments').html(body.data); // Et afficher le HTML
+            });
+        });
+        
+    });
+})(jQuery);
 // fin 
 

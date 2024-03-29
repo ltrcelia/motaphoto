@@ -3,8 +3,7 @@
     <div class="left-categories">
             <select id="select-categories" class="selection">
                 <option value="">catégorie</option>
-                <?php 
-                $terms = get_terms(array(
+                <?php $terms = get_terms(array(
                     'taxonomy' => 'categorie',
                     'hide_empty' => false,
                 )); 
@@ -14,8 +13,7 @@
             </select>           
             <select id="select-formats" class="selection">
                 <option value="">formats</option>
-                <?php 
-                $terms = get_terms(array(
+                <?php $terms = get_terms(array(
                     'taxonomy' => 'format',
                     'hide_empty' => false,
                 ));
