@@ -26,8 +26,8 @@
     <div class="right-categories">
             <select id="selectCustomField" class="selection">
                 <option value="">trier par</option>
-                <option value="">plus récentes</option>
-                <option value="">plus anciennes</option>
+                <option value="DESC">plus récentes</option>
+                <option value="ASC">plus anciennes</option>
             </select>
     </div>
     

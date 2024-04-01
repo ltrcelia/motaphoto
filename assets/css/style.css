@@ -123,6 +123,11 @@ header {
 .logo {
     width: 210px;
     height: 15px;
+    transition: 0.3s ease-in-out;
+}
+.logo:hover {
+    opacity: 0.7;
+    transform: scale(0.98);
 }
 /* */ 
 
