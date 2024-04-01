@@ -49,9 +49,4 @@ jQuery(document).ready(function($) {
         });
     });
 });
-//fin 
-
-
-// requete ajax lightbox
-
 //fin

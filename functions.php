@@ -101,4 +101,5 @@ add_action('wp_ajax_filter_photos', 'filter_photos');
 add_action('wp_ajax_nopriv_filter_photos', 'filter_photos');
 // fin
 
+
 ?>

@@ -1,3 +1,9 @@
+<?php
+    $prev_post = get_previous_post();
+    $next_post = get_next_post();
+    $prev_thumbnail = get_the_post_thumbnail($prev_post, 'thumbnail');
+    $next_thumbnail = get_the_post_thumbnail($next_post, 'thumbnail');
+?>
 <div id="lightbox">
     <span id="fixed" class="close">&times;</span>
     <div class="bloc-nav">
@@ -13,7 +19,7 @@
     
     <div class="container-image-infos">
         <div class="bloc-image">
-            <img src="<?php the_post_thumbnail_url(); ?>" class="article-image">
+            <img src="" class="article-image">
         </div>
         <div class="infos-title-tax">
             <p class="info-title"><?php the_title(); ?></p>
