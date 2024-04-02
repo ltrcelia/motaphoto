@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 }); 
 // fin
 
-// mise à jour infos images
+
+// mise à jour infos et images
 jQuery(document).ready(function($) {
     $('.overlay-image #icone-fullscreen').on('click', function(e) {
         e.preventDefault();
