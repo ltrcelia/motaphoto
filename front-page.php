@@ -15,7 +15,7 @@
                     'post_type' => 'photo',
                     'posts_per_page' => 8,
                     'orderby' => 'date',
-                    'order' => 'ASC',
+                    'order' => 'DESC',
                 ); 
                 $photos_query = new WP_Query($args);
                 if ($photos_query->have_posts()) {

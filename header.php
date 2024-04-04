@@ -17,7 +17,6 @@
             </a>
             <?php wp_nav_menu( array(
                 'theme_location' => 'primary-menu',
-                'menu_class' => 'menu',
             ) ); ?>
                 <div id="btn" class="btn-menu"> 
                     <span></span>
@@ -29,7 +28,6 @@
         <div id="menu-burger">
             <?php wp_nav_menu( array(
             'theme_location' => 'primary-menu',
-            'menu_class' => 'menu',
             ) ); ?>
         </div>
 

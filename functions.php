@@ -42,7 +42,7 @@ function load_more_photos() {
         'post_type' => 'photo',
         'posts_per_page' => 8, 
         'orderby' => 'date',
-        'order' => 'ASC',
+        'order' => 'DESC',
         'paged' => $page,
     ); 
 
