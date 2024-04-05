@@ -2,7 +2,7 @@
 
     <div class="left-categories">
             <select id="select-categories" class="selection">
-                <option value="">catégorie</option>
+                <option value="">catégories</option>
                 <?php $terms = get_terms(array(
                     'taxonomy' => 'categorie',
                     'hide_empty' => false,

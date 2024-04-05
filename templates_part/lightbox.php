@@ -17,7 +17,7 @@
         </div>
         <div class="infos-title-tax">
             <p class="info-title"><?php the_title(); ?></p>
-            <p class="info-tax"><?php echo get_field('reference', get_the_ID()); ?></p>
+            <p class="info-tax"><?php echo get_field('categories', get_the_ID()); ?></p>
         </div>
     </div>
 </div>

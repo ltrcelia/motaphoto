@@ -10,16 +10,11 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
 function enqueue_custom_scripts() {
     wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), null, true);
     wp_enqueue_script('lightbox-scripts', get_template_directory_uri() . '/assets/js/lightbox.js', array('jquery'), null, true);
+
+    // inclure ajax
+    wp_localize_script('custom-scripts', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php'), 'max_pages' => $max_pages));
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
-
-
-// inclure scripts ajax
-function my_enqueue_scripts() {
-    wp_enqueue_script('ajax-script', get_template_directory_uri() . '/ajax-script.js', array('jquery'));
-    wp_localize_script('ajax-script', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php'), 'max_pages' => $max_pages));
-}
-add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
 
 
 // inclure menus
@@ -43,7 +38,7 @@ function load_more_photos() {
         'posts_per_page' => 8, 
         'orderby' => 'date',
         'order' => 'DESC',
-        'paged' => $page,
+        'paged' => $page
     ); 
 
     $photos_query = new WP_Query($args);
