@@ -69,7 +69,6 @@ jQuery(document).ready(function ($) {
             },
             success: function(response) {
                 if (response) {
-                    $('.grid').append(response);
                     photoContainer($('.grid'));
                 } else {
                     $("#load-more-btn").hide();
